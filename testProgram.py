@@ -19,4 +19,4 @@ def test_payCalculator_prints_correct_result(capfd, monkeypatch):
 
     out, err = capfd.readouterr()
     print(out)
-    assert out == 'calculating pay\nPay: {}\n'.format(inp**2)
+    assert out == 'calculating pay\n{}\n'.format(inp**2)
