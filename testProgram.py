@@ -1,9 +1,6 @@
 import io
 from random import randint
-from secrets import randbelow
-import sys
-from unittest import mock
-from unittest.mock import Mock, patch
+from unittest.mock import Mock
 import payCalculator
 
 input_1 = Mock()
@@ -16,9 +13,6 @@ input_mock.side_effect = [input_1, input_2]
 
 
 def test_payCalculator_prints_correct_result(capfd, monkeypatch):
-    # monkeypatch.setattr('builtins.input', lambda _: "12")
-    # payCalculator.input = lambda: 'some_input'
-    # sys.stdin = io.StringIO('15\n29\n')
     inp = randint(1, 100)
     monkeypatch.setattr('builtins.input', lambda _:inp)
     payCalculator.calculatePay()
