@@ -6,7 +6,7 @@ The purpose of this assignment is to allow you to confirm you have Github Classr
 ## Steps for completion
 
 1. Open `payCalculator.py`
-1. Complete the assignment as described in https://canvas.instructure.com/courses/3650963/assignments/25666005/edit
+1. Complete the assignment as described in https://canvas.instructure.com/courses/3650963/assignments/25666005
 1. Note: complete the code inside the calculatePay section.  Each line should be indented between the comments in that file.  For example
 
 calculatePay():
