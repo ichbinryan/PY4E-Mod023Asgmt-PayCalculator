@@ -1,19 +1,28 @@
-[![Open in Visual Studio Code](https://classroom.github.com/assets/open-in-vscode-f059dc9a6f8d3a56e377f745f24479a46679e63a5d9fe6f495e02850cd0d8118.svg)](https://classroom.github.com/online_ide?assignment_repo_id=6637432&assignment_repo_type=AssignmentRepo)
-# Calculate Pay using variables
+# Assignment
+Write a program to prompt the user for hours and rate per hour to compute gross pay.
 
-The purpose of this assignment is to allow you to confirm you have Github Classroom set up properly and you're able to submit assignments.
+## Formulas
+Gross Pay = Hours * Rate
 
-## Steps for completion
+## Starter code
+```python
+# This first line is provided for you
 
-1. Open `payCalculator.py`
-1. Complete the assignment as described in https://canvas.instructure.com/courses/3650963/assignments/25666005
-1. Note: complete the code inside the calculatePay section.  Each line should be indented between the comments in that file.  For example
+hrs = input("Enter Hours:")
+```
 
-calculatePay():
-    all of the
-    code you are writing
-    should be indented 4 spaces
-    in between the comments in that file
+## Desired Output
+Please note, your gross pay should be printed by itself on its own line.
 
-1. When ready to submit, press the sync button in the assignments tab.
-1.  Hint: the desired output needs to be printed as described in the assignment, if it is not, the tests will fail.
+```python
+Enter Hours: 35
+Enter Rate: 2.75
+96.25
+```
+
+## Testing
+1. Open your terminal, make sure it's pointed at the right files
+2. Type in `pytest` and hit enter to see if your code passes!
+
+## Note:
+Please pay attention to types... if you try to multiply 2 strings, you will probably get an error.  You may need to `cast` your input to be a number type.
